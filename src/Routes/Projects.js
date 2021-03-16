@@ -58,6 +58,13 @@ class Projects extends React.Component {
               <button className='slider' onClick={this.slideRight}>{'>'}</button> 
             </div>
           </div>
+          <div className="project-container">
+            {/*  T0DO 
+                Add arduino projects section
+                Update projects list in app component to include arduino
+                Upload arduino sketches to github through platformIO
+                 */}
+          </div>
         </div>
         <br />
         
