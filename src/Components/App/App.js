@@ -9,6 +9,7 @@ import RecipeProject from './images/recipe-project-ss.png';
 import BookmarkProject from './images/bookmark-project-ss.png';
 import SBCMain from './images/mainPageSS.png';
 import hireLocal from './images/hireLocal.png';
+import ledStrip from './images/ledSensorButton.JPG';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
@@ -43,6 +44,10 @@ class App extends React.Component {
         id: 5,
         image: BookmarkProject,
       },
+      {
+        id: 6,
+        image: ledStrip,
+      }
     ]
   }
 

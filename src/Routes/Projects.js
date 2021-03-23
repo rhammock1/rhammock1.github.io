@@ -44,7 +44,8 @@ class Projects extends React.Component {
     const project = projects[index];
     const image = images[index];
 
-    const type = { project };
+    const { type } = project;
+   
     return (
       <div className='section-container'>
         
@@ -55,7 +56,7 @@ class Projects extends React.Component {
         }
         
           <AnimateOnChange animationIn="bounceIn" animationOut="bounceOut">
-            {type === 'arduino'
+            {type === "arduino"
             ? <ArduinoProject {...project} image={image.image}/>
             : <Project {...project} image={image.image}/> }
           </AnimateOnChange>
