@@ -41,10 +41,10 @@ class Projects extends React.Component {
     const { projects, images } = this.context;
     const { index } = this.state;
     const { pathname } = this.props.location || this.props;
-    const project = projects[index];
+    const project = projects[index] || {};
     const image = images[index];
 
-    const { type } = project;
+    const { type } = project || 'web';
    
     return (
       <div className='section-container'>
