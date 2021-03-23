@@ -46,11 +46,11 @@ class App extends React.Component {
     ]
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     // Eventually add in github api 
     const URL = 'https://damp-bayou-68931.herokuapp.com';
 
-    Promise.all([fetch(`${URL}/temperature`), fetch(`${URL}/projects`)])
+    await Promise.all([fetch(`${URL}/temperature`), fetch(`${URL}/projects`)])
       .then(([resTemp, resProjects]) => {
           if (!resTemp.ok) {
             return resTemp.json().then((e) => Promise.reject(e));

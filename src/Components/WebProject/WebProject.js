@@ -3,7 +3,6 @@ import './Project.css';
 
 const Project = function(props) {
   const {
-    img,
     alt,
     host,
     title,
@@ -12,11 +11,12 @@ const Project = function(props) {
     description,
     stack,
     pathname,
+    image
     } = props;
   return (
     <div id='project-slider' className="detail-container project-container">
       <h3>Web based</h3>
-      <img src={img} alt={alt} className="projectImg" />
+      <img src={image} alt={alt} className="projectImg" />
       {(pathname === '/projects')
         ? <h3><a className='heading' rel='noreferrer' target='_blank' href={host}>{title}</a></h3>
         : <h4><a className='heading' rel='noreferrer' target='_blank' href={host}>{title}</a></h4>

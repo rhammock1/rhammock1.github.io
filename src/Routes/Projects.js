@@ -38,10 +38,12 @@ class Projects extends React.Component {
   }
   
   render() {
-    const { projects } = this.context;
+    const { projects, images } = this.context;
     const { index } = this.state;
     const { pathname } = this.props.location || this.props;
     const project = projects[index];
+    const image = images[index];
+
     const type = { project };
     return (
       <div className='section-container'>
@@ -54,8 +56,8 @@ class Projects extends React.Component {
         
           <AnimateOnChange animationIn="bounceIn" animationOut="bounceOut">
             {type === 'arduino'
-            ? <ArduinoProject {...project} />
-            : <Project {...project} /> }
+            ? <ArduinoProject {...project} image={image.image}/>
+            : <Project {...project} image={image.image}/> }
           </AnimateOnChange>
           <div className='another-container'>
             <div className='button-container'>
