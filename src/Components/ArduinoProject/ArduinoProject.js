@@ -26,7 +26,7 @@ class ArduinoProject extends React.Component {
                     : <h4>{title}</h4>
                 }
                 <div className='repo-container'>
-                    <a rel='noreferrer' target='_blank' href={repo}>Public Repo</a>
+                    <a rel='noreferrer' target='_blank' href={repo}>GitHub Repo</a>
                     
                 </div>
                 <p>{description} </p>
