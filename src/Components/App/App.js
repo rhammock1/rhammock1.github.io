@@ -27,6 +27,7 @@ class App extends React.Component {
         stack: 'JavaScript, React, Node.js, Express, PostgreSQL',
         img: DinnerSS,
         alt: 'What\'s For Dinner app home page screen shot',
+        type: 'web',
       },
       {
         title: `Hire Local`,
@@ -37,6 +38,7 @@ class App extends React.Component {
         stack: 'JavaScript, React, Node.js, Express, PostgreSQL',
         img: hireLocal,
         alt: 'Hire Local app main page screen shot',
+        type: 'web',
       },
       {
         title: `Sports Biz Cares Fundraising Raffle`,
@@ -47,6 +49,7 @@ class App extends React.Component {
         stack: 'JavaScript, React, Node.js, Express, PostgreSQL',
         img: SBCMain,
         alt: 'SBC fundraising raffle app home page screen shot',
+        type: 'web',
       },
       {
         title: 'Freshlist Recipe Search',
@@ -57,6 +60,7 @@ class App extends React.Component {
         stack: 'JavaScript, React, HTML5, CSS3',
         img: RecipeProject,
         alt: 'Freshlist recipe app home page screen shot',
+        type: 'web',
       },
       {
         title: 'Website Bookmark App',
@@ -67,6 +71,7 @@ class App extends React.Component {
         stack: 'JavaScript, JQuery, HTML5, CSS3, Webpack',
         img: BookmarkProject,
         alt: 'Bookmark app home page screen shot',
+        type: 'web',
       },
     ],
     temperature: 0,

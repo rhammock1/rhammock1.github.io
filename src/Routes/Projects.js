@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '../Components/WebProject/WebProject';
 import Context from '../Context';
 import { AnimateOnChange } from 'react-animation';
+import ArduinoProject from '../Components/ArduinoProject/ArduinoProject';
 
 class Projects extends React.Component {
 
@@ -41,6 +42,7 @@ class Projects extends React.Component {
     const { index } = this.state;
     const { pathname } = this.props.location || this.props;
     const project = projects[index];
+    const type = { project };
     return (
       <div className='section-container'>
         
@@ -51,7 +53,9 @@ class Projects extends React.Component {
         }
         
           <AnimateOnChange animationIn="bounceIn" animationOut="bounceOut">
-            {<Project pathname={pathname} key={index} img={project.img} title={project.title} alt={project.alt} host={project.host} clientRepo={project.clientRepo} serverRepo={project.serverRepo} description={project.description} stack={project.stack} />}
+            {type === 'arduino'
+            ? <ArduinoProject {...project} />
+            : <Project {...project} /> }
           </AnimateOnChange>
           <div className='another-container'>
             <div className='button-container'>
@@ -59,13 +63,7 @@ class Projects extends React.Component {
               <button className='slider' onClick={this.slideRight}>{'>'}</button> 
             </div>
           </div>
-          <div className="project-container">
-            {/*  T0DO 
-                Add arduino projects section
-                Update projects list in app component to include arduino
-                Upload arduino sketches to github through platformIO
-                 */}
-          </div>
+          
         </div>
         <br />
         
