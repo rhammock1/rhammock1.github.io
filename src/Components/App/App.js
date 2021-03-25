@@ -10,6 +10,8 @@ import BookmarkProject from './images/bookmark-project-ss.png';
 import SBCMain from './images/mainPageSS.png';
 import hireLocal from './images/hireLocal.png';
 import ledStrip from './images/ledSensorButton.JPG';
+import balconyTemp from './images/balconyTempSensor.JPG';
+import fullBreakBeam from './images/breakBeamFullView.JPG';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
@@ -47,6 +49,14 @@ class App extends React.Component {
       {
         id: 6,
         image: ledStrip,
+      },
+      {
+        id: 7,
+        image: balconyTemp,
+      },
+      {
+        id: 8,
+        image: fullBreakBeam,
       }
     ]
   }
