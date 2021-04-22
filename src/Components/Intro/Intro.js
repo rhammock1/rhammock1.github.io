@@ -10,7 +10,7 @@ class Intro extends React.Component {
 
   render() {
     const hello = helpers.greeting();
-    const { temperature } = this.context;
+    const { temperature, repo } = this.context;
     return (
       <div className="section-container">
         <div className='img'>
@@ -27,7 +27,7 @@ class Intro extends React.Component {
                   begin recording data 
                   add graph data in with D3 
                   compare one day to the next */}
-                  <p className="temperature">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every minute</p>
+                  <p className="center">This data is being gathered by an ESP8266 with a DHT11 temperature sensor. The 8266 is making a POST request with the data to my home server every minute</p>
                 </div>
               </div>
           
@@ -40,6 +40,9 @@ class Intro extends React.Component {
             </ul>
           </div> 
             <p className='indent'>My goals are to use software to create positive change in my community, to never stop learning, and to always keep building</p>
+            <div className='temp center'>
+              <p>Currently working on the <br /><span className='emphasize'>{repo.name}</span> repository</p>
+            </div>
         </div>  
       </div>
       )
