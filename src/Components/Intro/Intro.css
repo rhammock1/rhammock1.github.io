@@ -51,3 +51,6 @@ ul>li {
   color: #C6D8FF;
 }
 /* 69DC9E */
+ul.center {
+  margin: auto;
+}

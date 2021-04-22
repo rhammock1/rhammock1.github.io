@@ -16,12 +16,12 @@ class Intro extends React.Component {
         <div className='img'>
           <img src={FishLips} alt="Me making kissy face at a fish" id="fishLips" />
         </div>
-        <h2>{hello}</h2>
+        <h2 >{hello}</h2>
         <div className="detail-container">
           <p className='indent'>I am a Full Stack Developer, who is open to new opportunities. I am currently working a few hours a month for a small local food hub, called Freshlist. I have a background in Restaurants and Food Service and 
           live in Charlotte, North Carolina.</p>
           <div className='temp'>
-                <p className='temperature'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temperature}&#176;F</span> outside my home.</p>
+                <p className='temperature center'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temperature}&#176;F</span> outside my home.</p>
                 <div className="popup">
                   {/* TODO 
                   begin recording data 
@@ -31,9 +31,9 @@ class Intro extends React.Component {
                 </div>
               </div>
           
-          <div className="interest-list">
+          <div className="interest-list center">
             <p className='indent'>As a developer I am interested in:</p>
-            <ul>
+            <ul className='center'>
               <li>Microcontrollers and IoT</li>
               <li>Making things work</li>
               <li>Learning everything I can</li>
