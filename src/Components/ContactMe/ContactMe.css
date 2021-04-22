@@ -26,7 +26,8 @@ form {
 input, textarea {
   background-color: #121212;
   border: none;
-  padding: 5px;
+  padding: 8px 10px;
+  border-radius: 10px;
 }
 .list>ol {
   width: 50%;
