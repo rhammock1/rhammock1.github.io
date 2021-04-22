@@ -12,6 +12,7 @@ import hireLocal from './images/hireLocal.png';
 import ledStrip from './images/ledSensorButton.JPG';
 import balconyTemp from './images/balconyTempSensor.JPG';
 import fullBreakBeam from './images/breakBeamFullView.JPG';
+import zoomClone from './images/zoomCloneCrop.png';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
@@ -28,36 +29,41 @@ class App extends React.Component {
     images: [
       {
         id: 1,
-        image: DinnerSS,
+        image: zoomClone,
       },
       {
         id: 2,
-        image: hireLocal,
+        image: DinnerSS,
       },
       {
         id: 3,
-        image: SBCMain,
+        image: hireLocal,
       },
       {
         id: 4,
-        image: RecipeProject,
+        image: SBCMain,
       },
       {
         id: 5,
-        image: BookmarkProject,
+        image: RecipeProject,
       },
       {
         id: 6,
-        image: ledStrip,
+        image: BookmarkProject,
       },
       {
         id: 7,
-        image: balconyTemp,
+        image: ledStrip,
       },
       {
         id: 8,
+        image: balconyTemp,
+      },
+      {
+        id: 9,
         image: fullBreakBeam,
-      }
+      },
+      
     ]
   }
 
