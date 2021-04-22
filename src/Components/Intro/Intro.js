@@ -10,7 +10,7 @@ class Intro extends React.Component {
 
   render() {
     const hello = helpers.greeting();
-    const { temp } = this.context;
+    const { temperature } = this.context;
     return (
       <div className="section-container">
         <div className='img'>
@@ -21,7 +21,7 @@ class Intro extends React.Component {
           <p className='indent'>I am a Full Stack Developer, who is open to new opportunities. I am currently working a few hours a month for a small local food hub, called Freshlist. I have a background in Restaurants and Food Service and 
           live in Charlotte, North Carolina.</p>
           <div className='temp'>
-                <p className='temperature'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temp}&#176;F</span> outside my home.</p>
+                <p className='temperature'>It is currently <span className='emphasize temp-click' onClick={this.handleClick}>{temperature}&#176;F</span> outside my home.</p>
                 <div className="popup">
                   {/* TODO 
                   begin recording data 

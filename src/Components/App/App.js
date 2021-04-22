@@ -26,7 +26,7 @@ class App extends React.Component {
     temperature: 0,
     data: [],
     error: null,
-    mostRecentRepo: [],
+    repo: {},
     images: [
       {
         id: 1,
@@ -98,16 +98,18 @@ class App extends React.Component {
       });
 
     const repos = await helpers.getRepos();
-    this.setState({mostRecentRepo: repos[0]});
+    this.setState({repo: repos[0]});
 
   }
 
   render() {
+    const { projects, images, temperature, data, repo } = this.state;
     const value = {
-      projects: this.state.projects,
-      images: this.state.images,
-      temp: this.state.temperature,
-      data: this.state.data
+      projects,
+      images,
+      temperature,
+      data,
+      repo, 
     }
     return (
       <Context.Provider value={value} >

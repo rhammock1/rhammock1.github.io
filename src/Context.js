@@ -3,6 +3,7 @@ import React from 'react';
 export default React.createContext({
   projects: [],
   data: [],
-  temp: 0,
+  temperature: 0,
   images: [],
+  repo: {},
 });
