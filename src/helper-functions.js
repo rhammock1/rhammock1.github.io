@@ -18,7 +18,7 @@ const helpers = {
         },
       
     getRepos() {
-        const endpoint = 'https://api.github.com/users/rhammock1/repos?per_page=100';
+        const endpoint = 'https://api.github.com/users/rhammock1/repos?sort=pushed&per_page=100';
         return fetch(endpoint, {
             headers: {
                 'authorization': `bearer ${process.env.REACT_APP_API_TOKEN}`,

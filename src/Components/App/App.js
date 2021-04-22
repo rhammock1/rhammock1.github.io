@@ -17,6 +17,7 @@ import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
 import './App.css';
+import helpers from '../../helper-functions';
 
 class App extends React.Component {
 
@@ -25,7 +26,7 @@ class App extends React.Component {
     temperature: 0,
     data: [],
     error: null,
-    repos: [],
+    mostRecentRepo: [],
     images: [
       {
         id: 1,
@@ -96,7 +97,9 @@ class App extends React.Component {
         this.setState({ error });
       });
 
-    
+    const repos = await helpers.getRepos();
+    this.setState({mostRecentRepo: repos[0]});
+
   }
 
   render() {
