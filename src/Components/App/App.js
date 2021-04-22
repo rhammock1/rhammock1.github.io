@@ -13,6 +13,7 @@ import ledStrip from './images/ledSensorButton.JPG';
 import balconyTemp from './images/balconyTempSensor.JPG';
 import fullBreakBeam from './images/breakBeamFullView.JPG';
 import zoomClone from './images/zoomCloneCrop.png';
+import noise from './images/noiseMachine.jpg';
 import Context from '../../Context';
 import Projects from '../../Routes/Projects';
 import Contact from '../../Routes/Contact';
@@ -64,6 +65,10 @@ class App extends React.Component {
         id: 9,
         image: fullBreakBeam,
       },
+      {
+        id: 10,
+        image: noise,
+      }
       
     ]
   }
