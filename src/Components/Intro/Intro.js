@@ -41,7 +41,7 @@ class Intro extends React.Component {
           </div> 
             <p className='indent'>My goals are to use software to create positive change in my community, to never stop learning, and to always keep building</p>
             <div className='temp center'>
-              <p>Currently working on the <br /><span className='emphasize'>{repo.name}</span> repository</p>
+              <p>Currently working on the <br /><span className='emphasize'>{repo.name}</span><br />repository</p>
             </div>
         </div>  
       </div>
