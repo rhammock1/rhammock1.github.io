@@ -19,11 +19,13 @@ const AboutMe = function(props) {
         a year ago. I made a lot of use of freeCodeCamp and LinkedIn Learn videos. Aside from coding I enjoy,
         cooking and baking, watching Netflix documentaries and anime, playing video games, and spending time with my family.  
         </p>
-        <p className='indent'>Working with Freshlist, I was able to use HTML and CSS to edit our order slips. We were able to prototype an Instagram follower counter. 
-          We had to code an HTML scrape with Python to pull the data we needed and then wire the display to a Raspberry Pi to show the data. 
-          We have also recently started working on a type of blockchain program to track whole animals as they go from the rancher to a processor, to us.
-        </p>
-        <p className='indent'>I am proficient in <span className='emphasize'>Node.js, React, Express, and PostrgreSQL</span>. I am always eager to learn more.</p>
+
+        <p className='indent'>Working with Freshlist, I was able to use HTML and CSS to edit our Shopify order slips to include or logo, format, and style. We were able to prototype an Instagram follower counter. The prototype was an HTML scrape coded with Python to pull the data we needed and then a seven-segment display was wired to a Raspberry Pi to show the data. Recently, I have built a full-stack web app allowing users to search through Freshlist's recipes. We have also set up an Express API with PostgreSQL database for a proprietary app to help facilitate business between Freshlist and local farmers</p>
+
+        <p className='indent'>During my free time I have set up an Express server on Raspberry Pi, enabled and configured UFW firewall to access remotely with SSH. Also registered 2 domains (<span className='emphasize'>dinnerbear.com and smokeybear.dev</span>) and updated the respective DNS PTRs to both apps hosted on <span className='emphasize'>Firebase</span></p>
+
+        <p className='indent'>I am proficient in <span className='emphasize'>Node.js, React, Express, and PostrgreSQL</span>. On the side I am teaching myself <span className='emphasize'>C/C++ and Python</span> to be able to interface with various microcontrollers and embedded devices. I am always eager to learn more.</p>
+
       </div>
       {(pathname === '/about')
         ? <button className="back" type="button"><Link to='/'>Back</Link></button>
