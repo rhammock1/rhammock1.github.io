@@ -75,9 +75,18 @@ class App extends React.Component {
 
   async componentDidMount() {
     // Eventually add in github api 
-    const URL = 'https://damp-bayou-68931.herokuapp.com';
+    const URL = 'http://9098781dacfc.ngrok.io' || 'https://damp-bayou-68931.herokuapp.com';
+    // const URL = 'http://localhost:8080';
 
-    await Promise.all([fetch(`${URL}/temperature`), fetch(`${URL}/projects`)])
+    await Promise.all([fetch(`${URL}/temperature`, {
+      headers: {
+        clientkey: process.env.REACT_APP_BASE_KEY,
+      }
+    }), fetch(`${URL}/projects`, {
+      headers: {
+        clientkey: process.env.REACT_APP_BASE_KEY,
+      }
+    })])
       .then(([resTemp, resProjects]) => {
           if (!resTemp.ok) {
             return resTemp.json().then((e) => Promise.reject(e));
