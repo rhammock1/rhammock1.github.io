@@ -75,7 +75,7 @@ class App extends React.Component {
 
   async componentDidMount() {
     // Eventually add in github api 
-    const URL = 'http://9098781dacfc.ngrok.io' || 'https://damp-bayou-68931.herokuapp.com';
+    const URL = 'https://9098781dacfc.ngrok.io' || 'https://damp-bayou-68931.herokuapp.com';
     // const URL = 'http://localhost:8080';
 
     await Promise.all([fetch(`${URL}/temperature`, {
